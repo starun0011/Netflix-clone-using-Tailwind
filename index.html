@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix By Tarun Soni</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "426px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "768px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1024px",
+            // => @media (min-width: 1024px) { ... }
+
+            xl: "1280px",
+            // => @media (min-width: 1280px) { ... }
+
+            "2xl": "1536px",
+            // => @media (min-width: 1536px) { ... }
+          },
+          extend: {},
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div
+      class="w-full h-[67vh] sm:h-[90vh] lg:h-[120vh] bg-[url('images/netflix-bg-top.jpg')] bg-cover bg-center border-b-[10px] border-b-white border-opacity-70"
+    >
+      <div class="w-full h-[67vh] sm:h-[90vh] lg:h-[120vh] bg-[rgb(0,0,0,0.6)]">
+        <header
+          class="max-w-[1170px] mx-auto h-[13vh] flex justify-around sm:gap-[19vw] items-center text-white"
+        >
+          <div class="items-center">
+            <img src="images/logo.png" alt="" class="h-[4.5vh] sm:h-[8vh]" />
+          </div>
+          <div class="flex gap-3 items-center relative">
+            <div class="absolute left-[3px]">🌐</div>
+            <select
+              name=""
+              id=""
+              class="p-[1px_9px_2px_23px] text-sm rounded bg-transparent border-[2px] border-[#4C4A5]"
+            >
+              <option value="" class="">English</option>
+              <option value="" class="">Hindi</option>
+            </select>
+            <button
+              class="bg-[red] p-[4px_14px_6px_14px] rounded-[5px] text-sm xs:bg-[yellow] hover:bg-[rgb(193,17,25)] duration-300"
+            >
+              Sign in
+            </button>
+          </div>
+        </header>
+        <div
+          class="text-white flex flex-col items-center p-[2vh_5%] sm:p-[6vh_11%] md:p-[3vh_11%] lg:p-[32vh_11%] gap-[12px] text-center h-[calc(100%-13vh)]"
+        >
+          <h1 class="text-[32px] sm:text-[2.3rem] md:text-[2.8rem] font-[700]">
+            Unlimited movies, TV shows and more
+          </h1>
+          <h3 class="sm:text-[17px] md:text-[22px] sm:font-[500]">
+            Watch anywhere. Cancel anytime.
+          </h3>
+          <h3 class="w-[70%] sm:text-[17px] md:text-[21px] sm:font-[500]">
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </h3>
+        
+          <form class="items-center  flex flex-col md:flex-row  md:gap-[15px] ">
+            <input
+              type="email"
+              placeholder="Email address"
+              class="bg-transparent text-[16px] border p-[10px] rounded w-[70vw] sm:w-[60vw] md:w-[28vw] sm:p-[11px_10px] "
+            />
+            <button
+              class="bg-[red] p-[10px_25px] sm:p-[11px_2vh] sm:text-[18px] sm:font-[700] rounded-[5px] my-[17px] text-[18px] font-[600]
+              hover:bg-[rgb(193,17,25)] duration-300 "
+            >
+              Get started >
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <section class="h-[65vh] sm:h-[110vh] lg:h-[90vh] max-width-full 
+flex flex-col lg:flex-row   bg-black bg-opacity-50 border-b-[10px] border-b-white border-opacity-70">
+      <div class="h-[35%] sm:h-[35%] lg:h-[100%] lg:w-[50%] w-full text-white text-center 
+       lg:text-start flex flex-col justify-center pt-[20px] lg:pt-[0px]  bg-black lg:px-[25px] ">
+        <h1 class="text-[32px] font-[800] lg:text-[50px] ">Enjoy on your TV</h1>
+        <p class="text-[18px] p-[5px_25px] lg:p-[0px]  lg:text-[22px] lg:font-[600] ">
+          Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+        </p>
+      </div>
+      <div class="h-[65%] sm:h-[70%] lg:h-[100%] lg:w-[50%] w-full  bg-black flex  justify-center sm:pb-[22px] relative lg:items-center ">
+        <video src="images/video-tv-in-0819.m4v" class="w-[250px] sm:w-[350px] md:w-[400px]  sm:top-none h-[75%] absolute z-0" autoplay muted ></video>
+        <img src="images/tv.png" alt="" class=" h-[80%]  z-10" />
+      </div>
+    </section>
+    <section class="h-[65vh] sm:h-[110vh] lg:h-[80vh] max-width"></section>
+  </body>
+</html>
